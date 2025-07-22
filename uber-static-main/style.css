@@ -1,0 +1,568 @@
+/* ___________GLOBAL____________ */
+
+@font-face {
+  font-family: "Uber";
+  src: url("./fonts/UberMoveMedium.otf");
+}
+@font-face {
+  font-family: "UberRegular";
+  src: url("./fonts/UberMoveTextRegular.otf");
+}
+@font-face {
+  font-family: "UberLight";
+  src: url("./fonts/UberMoveTextLight.otf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: Uber;
+  background-color: #ffff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-family: "UberRegular";
+}
+
+select {
+  font-size: 16px;
+  outline: none;
+  border: 1.5px solid #f3f3f3;
+}
+i {
+  color: white;
+}
+
+/* ___________HEADER____________ */
+
+header {
+  display: block;
+  color: white;
+  background-color: black;
+  height: 64px;
+  line-height: 24px;
+  padding: 12px 215px;
+}
+.header-section {
+  display: flex;
+  align-items: flex-end;
+  width: 1520px;
+  padding: 8px 64px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: last baseline;
+  width: 90%;
+}
+ul {
+  list-style: none;
+  margin: 0px 24px;
+  width: 75%;
+}
+#logo {
+  font-size: 24px;
+}
+.nav-list {
+  display: inline-block;
+}
+.nav-links {
+  text-align: center;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.nav-btn {
+  padding: 10px 12px;
+  border-radius: 30px;
+  background-color: #ffff;
+  color: #000;
+}
+span i {
+  vertical-align: -4px;
+}
+
+/* ____________SECTION1-BANNER______________ */
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 520px;
+  padding: 64px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.user-inputs {
+  width: 400px;
+  padding-right: 20px;
+}
+.pickup-input,
+.dropoff-input,
+.day-date,
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 44px;
+  padding: 10px 0px 10px 24px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin: 12px;
+  margin-left: 0;
+}
+.time-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.day-date,
+.time {
+  width: 50%;
+  display: inline-block;
+}
+.time {
+  margin-right: 0px;
+}
+
+input {
+  background-color: #f3f3f3;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  width: inherit;
+}
+#date {
+  border: none;
+}
+#time {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 80%;
+  line-height: 24px;
+}
+
+.images-general {
+  border-radius: 8px;
+  width: 576px;
+}
+.banner-image {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+.cta-section {
+  width: 380px;
+  margin: 12px;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.cta-btn {
+  padding: 14px 25px;
+  background-color: black;
+  color: white;
+  margin-top: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.cta-link {
+  margin-left: 5px;
+  font-family: UberRegular;
+}
+
+/* ____________SECTION2-SUGGESTIONS______________ */
+
+.suggestions-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1280px;
+  padding: 64px;
+}
+.suggestions-title {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+  width: 30%;
+  padding: 16px;
+}
+.card-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.card-image {
+  width: 128px;
+  height: 128px;
+}
+.card-text {
+  font-size: 12px;
+  padding: 8px;
+  padding-left: 0px;
+}
+.detail-btn {
+  padding: 10px 12px;
+  background-color: #ffff;
+  border-radius: 30px;
+  width: 70px;
+}
+
+/* ____________SECTION3-RECENT-ACTIVITIES______________ */
+
+.login-signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1280px;
+  padding: 64px;
+  height: 500px;
+}
+.login-form {
+  width: 459px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login-btn {
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.login-text {
+  width: 460px;
+}
+.signup {
+  font-family: UberRegular;
+}
+
+/* ____________SECTION4-PLAN-FOR LATER______________ */
+
+.plan-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1280px;
+  padding: 0px 64px;
+}
+.plan-secondary-container {
+  display: flex;
+  flex-direction: row;
+}
+.plan-contents {
+  display: flex;
+  padding: 36px;
+  background-color: rgb(157, 205, 214);
+  background-image: url(/images/plan.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  width: 768px;
+  height: 390px;
+}
+.plan-reserve {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.heading-custom {
+  font-size: 36px;
+  margin: 30px 0px;
+}
+.plan-reserve {
+  width: 360px;
+  margin-top: 20px;
+}
+.plan-label {
+  margin-top: 24px 0px 8px;
+  font-size: 18px;
+}
+.plan-input-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.plan-input {
+  display: flex;
+  padding: 10px 14px 10px 48px;
+  width: 90%;
+  border-radius: 8px;
+  line-height: 24px;
+}
+.input-secondary {
+  width: 50%;
+}
+.btn {
+  padding: 14px 25px;
+  width: 360px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 12px 12px 50px;
+}
+.benefits-title {
+  margin: 0px 0px 20px;
+}
+
+.ben-ul {
+  font-family: UberRegular;
+}
+.benefits-li {
+  padding: 12px 12px;
+}
+.li-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ____________SECTION4-DRIVE______________ */
+
+.section-container {
+  width: 1280px;
+  padding: 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.section-image {
+  width: 558px;
+}
+.section-content {
+  width: 558px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 100px 0 100px 60px;
+}
+.drive-text {
+  display: inline-block;
+  width: 459px;
+}
+
+/* ____________SECTION5-GLOBAL RIDE______________ */
+
+/* ____________SECTION 6-RENT YOUR CAR______________ */
+
+/* ____________SECTION 7-DOWNLOAD______________ */
+
+.download-section {
+  background-color: #f3f3f3;
+}
+.download-container {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  padding: 64px;
+}
+.download-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 32px;
+}
+.download-card {
+  width: 558px;
+  height: 198px;
+  background-color: white;
+}
+.qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 198px;
+  width: auto;
+}
+.qr-img {
+  width: 150px;
+  margin-left: 32px;
+}
+.qr-custom {
+  font-size: 24px;
+}
+.qr-container {
+  display: flex;
+  flex-direction: row;
+}
+.qr-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px 48px 40px 24px;
+}
+
+/* ____________SECTION 7-FOOTER______________ */
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  padding: 64px;
+}
+.footer-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 0px 32px 0px;
+}
+.social-media-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.media-list {
+  width: 558px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+.sm {
+  display: inline-block;
+}
+i {
+  font-size: 21px;
+}
+.help {
+  margin: 60px 0px;
+}
+
+.footer-list-titles {
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.footer-list-items {
+  margin: 18px 0px;
+}
+
+.location-lang {
+  width: 260px;
+}
+.lang {
+  all: unset;
+}
+
+.playstore {
+  display: flex;
+}
+.app-svg {
+  display: inline-block;
+  width: 128px;
+  margin: 0px 8px;
+}
+
+/* _______copyright________ */
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  font-size: 12px;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*____________ICONS-GENRERAL_____________ */
+
+.fa-solid {
+  color: black;
+  scale: 0.8;
+}
+.fa-circle,
+.fa-square {
+  scale: 0.35;
+}
+.fa-globe {
+  color: #ffff;
+  scale: 0.7;
+}
+.fa-location-dot {
+  color: #ffff;
+}
+.privacy-contents{
+  margin-right: 15px;
+}
+
+/* _________PSUEDO CLASSES AND ELEMENTS________ */
+
+input:focus {
+  outline: none;
+}
+
+.input-wrapper:focus-within {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+}
+
+.cta-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
